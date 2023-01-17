@@ -56,6 +56,8 @@
         <div class="box2">
             <h1>mainbox 2</h1>
             <h2>main-stuff</h2>
+              <!-- We will put our React component inside this div. -->
+            <div id="like_button_container"></div>
             <p>This box will contain a lot of text. The grid cell has been set to 3fr to accomodate it and prevent overflow.</p>
             <p>This box will contain a lot of text. The grid cell has been set to 3fr to accomodate it and prevent overflow.</p>
 
@@ -154,5 +156,12 @@
             </div>
         </div>
     </footer>
+        <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="/styles/scripts/like_button.js"></script>
 </body>
 </html>
